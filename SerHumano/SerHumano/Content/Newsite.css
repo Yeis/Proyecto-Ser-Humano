@@ -1,0 +1,10 @@
+﻿
+html
+ {
+    background-color:  #e6ebb1;
+     background: url(Images/fondo-arboles-01.png) repeat center center  fixed; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
