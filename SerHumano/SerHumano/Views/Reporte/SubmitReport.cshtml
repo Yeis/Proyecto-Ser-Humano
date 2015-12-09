@@ -1,0 +1,20 @@
+﻿@model SerHumano.Models.Reporte
+
+
+<h2>Reporte de Area Afectada</h2>
+
+@using (Html.BeginForm()) { 
+    <div class="col-lg-12">
+        <label class="col-lg-4">Ubicación:</label>
+        @Html.TextBoxFor(x => x.Ubicacion, new { @class="form-control col-lg-8"})
+    </div>
+
+    <div class="col-lg-12">
+        <label class="col-lg-4">Causa del Reporte:</label>
+        @Html.TextBoxFor(x => x.CausaReporte, new { @class = "form-control col-lg-8" })
+    </div>
+    <div>
+        <button class="btn btn-default form-control" type="submit">Dar de Alta</button>
+    </div>
+    
+}
