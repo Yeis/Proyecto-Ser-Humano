@@ -7,9 +7,9 @@ namespace SerHumano.Models
 {
     public class Reporte
     {
-        public int ID;
-        public string Ubicacion;
-        public string CausaReporte;
-        public DateTime FechaReporte;
+        public int ID{ get; set; }
+        public string Ubicacion{ get; set; }
+        public string CausaReporte { get; set; }
+        public DateTime FechaReporte{ get; set; }
     }
 }
