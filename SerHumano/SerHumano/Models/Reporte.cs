@@ -11,5 +11,8 @@ namespace SerHumano.Models
         public string Ubicacion{ get; set; }
         public string CausaReporte { get; set; }
         public DateTime FechaReporte{ get; set; }
+        public string FilePath { get; set; }
+        public string Titulo { get; set; }
+
     }
 }
