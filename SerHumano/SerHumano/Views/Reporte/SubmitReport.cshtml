@@ -1,32 +1,32 @@
 ﻿@model SerHumano.Models.Reporte
 
+@Styles.Render("~/Content/Home.css")
 
 
-
-<div align="center">
+<div align="center" id="Main-Form">
     <h2>Reporte de Area Afectada</h2>
     @using (Html.BeginForm("SubmitReport", "Reporte", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
-        <div class="col-lg-12">
+        <div id="Property" class="col-lg-12">
             <label class="col-lg-4">Título:</label>
             @Html.TextBoxFor(x => x.Titulo, new { @class = "form-control col-lg-8" })
         </div>
-        <div class="col-lg-12">
+        <div id="Property" class="col-lg-12">
             <label class="col-lg-4">Ubicación:</label>
             @Html.TextBoxFor(x => x.Ubicacion, new { @class = "form-control col-lg-8" })
         </div>
 
         <div class="col-lg-12">
-            <label class="col-lg-4">Causa del Reporte:</label>
+            <label id="Property" class="col-lg-4">Causa del Reporte:</label>
             @Html.TextBoxFor(x => x.CausaReporte, new { @class = "form-control col-lg-8" })
         </div>
         <div class="col-lg-12">
-            <label class="col-lg-4">Imagen de Area Afectada:</label>
+            <label id="Property" class="col-lg-4">Imagen de Area Afectada:</label>
             <input type="file" name="file" value="" class="form-control" accept="image/*"/>
         </div>
 
         <div>
-            <button class="btn btn-default form-control" type="submit">Dar de Alta</button>
+            <button id="Property" class="btn btn-default form-control" type="submit">Dar de Alta</button>
         </div>
 
     }
