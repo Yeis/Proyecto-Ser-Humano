@@ -1,0 +1,10 @@
+﻿html
+{
+       background-color:  #aaeeee;
+     background: url(Images/fondoazul-02.png) repeat center center   fixed; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+
+}

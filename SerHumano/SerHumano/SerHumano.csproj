@@ -194,7 +194,10 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Newsite.css" />
+    <Content Include="Content\Details.css" />
+    <Content Include="Content\Home.css" />
+    <Content Include="Content\Images\fondoazul-02.png" />
+    <Content Include="Content\List.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
