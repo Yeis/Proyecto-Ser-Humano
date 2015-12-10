@@ -1,0 +1,11 @@
+﻿@model ICollection<SerHumano.Models.ReportListViewModel>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<ul>
+    @foreach (var Report in Model)
+    {
+        <li>@Report.Header</li>
+    }
+</ul>
+

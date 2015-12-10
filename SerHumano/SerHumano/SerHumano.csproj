@@ -179,6 +179,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Reporte.cs" />
+    <Compile Include="Models\ReportListViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReporteContext.cs" />
     <Compile Include="Startup.cs" />
@@ -247,6 +248,7 @@
     <Content Include="Views\Shared\_HomeLayout.cshtml" />
     <Content Include="Views\Shared\Home.cshtml" />
     <Content Include="Views\Reporte\SubmitReport.cshtml" />
+    <Content Include="Views\Reporte\ReportsList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

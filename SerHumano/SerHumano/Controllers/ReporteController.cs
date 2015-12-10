@@ -17,6 +17,12 @@ namespace SerHumano.Controllers
             return View();
         }
 
+        public ActionResult ReportsList()
+        {
+            var Reports = reporteBusiness.GetReportsList();
+            return View(Reports);
+        }
+
         public ActionResult SubmitReport()
         {
             return View();

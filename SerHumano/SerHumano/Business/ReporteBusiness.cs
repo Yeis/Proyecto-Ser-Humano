@@ -20,5 +20,16 @@ namespace SerHumano.Business
             context.Reportes.Add(report);
             context.SaveChanges();
         }
+
+        public ICollection<ReportListViewModel> GetReportsList()
+        {
+            var ViewModels = context.Reportes.Select(AsViewModel);
+            return ViewModels.ToList();
+        }
+
+        ReportListViewModel AsViewModel(Reporte Reporte)
+        {
+            return new ReportListViewModel() { Header = Reporte.CausaReporte, Id = Reporte.ID };
+        }
     }
 }
