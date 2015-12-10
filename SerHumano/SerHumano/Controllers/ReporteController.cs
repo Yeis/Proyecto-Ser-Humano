@@ -33,13 +33,18 @@ namespace SerHumano.Controllers
         public ActionResult SubmitReport(Models.Reporte reporte, HttpPostedFileBase file)
         {
             string folderPath = "Images";
-            string filePath = folderPath + "\\" + file.FileName;
-            string longPathFolder = string.Format("{0}{1}", AppDomain.CurrentDomain.BaseDirectory, folderPath);
-            string longPath = string.Format("{0}{1}", AppDomain.CurrentDomain.BaseDirectory, filePath);
-            bool exists = Directory.Exists(longPathFolder);
-            if (!exists)
-                Directory.CreateDirectory(longPathFolder);
-            file.SaveAs(longPath);
+            string filePath = null;
+            if (file != null)
+            {
+                filePath = folderPath + "\\" + file.FileName;
+
+                string longPathFolder = string.Format("{0}{1}", AppDomain.CurrentDomain.BaseDirectory, folderPath);
+                string longPath = string.Format("{0}{1}", AppDomain.CurrentDomain.BaseDirectory, filePath);
+                bool exists = Directory.Exists(longPathFolder);
+                if (!exists)
+                    Directory.CreateDirectory(longPathFolder);
+                file.SaveAs(longPath);
+            }
             reporte.FechaReporte = DateTime.Now;
             reporte.FilePath = filePath;
             reporteBusiness.Insert(reporte);

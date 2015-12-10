@@ -2,10 +2,10 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<ul>
+<ul class="list-group">
     @foreach (var Report in Model)
     {
-        <li>@Report.Header</li>
+        <li class="list-group-item"><a href="">@Report.Header</a></li>
     }
 </ul>
 

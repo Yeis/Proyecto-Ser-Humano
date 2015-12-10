@@ -29,7 +29,7 @@ namespace SerHumano.Business
 
         ReportListViewModel AsViewModel(Reporte Reporte)
         {
-            return new ReportListViewModel() { Header = Reporte.CausaReporte, Id = Reporte.ID };
+            return new ReportListViewModel() { Header = Reporte.Titulo, Id = Reporte.ID };
         }
     }
 }
