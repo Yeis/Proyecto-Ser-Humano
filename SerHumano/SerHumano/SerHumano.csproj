@@ -175,6 +175,14 @@
     <Compile Include="Migrations\201512090623515_InitialMigration.Designer.cs">
       <DependentUpon>201512090623515_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512100640366_PhotoPathAdded.cs" />
+    <Compile Include="Migrations\201512100640366_PhotoPathAdded.Designer.cs">
+      <DependentUpon>201512100640366_PhotoPathAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512100734215_AddedTitle.cs" />
+    <Compile Include="Migrations\201512100734215_AddedTitle.Designer.cs">
+      <DependentUpon>201512100734215_AddedTitle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -252,6 +260,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -264,6 +273,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201512090623515_InitialMigration.resx">
       <DependentUpon>201512090623515_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512100640366_PhotoPathAdded.resx">
+      <DependentUpon>201512100640366_PhotoPathAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512100734215_AddedTitle.resx">
+      <DependentUpon>201512100734215_AddedTitle.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

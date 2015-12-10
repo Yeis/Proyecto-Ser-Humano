@@ -1,6 +1,7 @@
 ﻿using SerHumano.Business;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -29,11 +30,20 @@ namespace SerHumano.Controllers
         }
 
         [HttpPost]
-        public ActionResult SubmitReport(Models.Reporte reporte)
+        public ActionResult SubmitReport(Models.Reporte reporte, HttpPostedFileBase file)
         {
+            string folderPath = "Images";
+            string filePath = folderPath + "\\" + file.FileName;
+            string longPathFolder = string.Format("{0}{1}", AppDomain.CurrentDomain.BaseDirectory, folderPath);
+            string longPath = string.Format("{0}{1}", AppDomain.CurrentDomain.BaseDirectory, filePath);
+            bool exists = Directory.Exists(longPathFolder);
+            if (!exists)
+                Directory.CreateDirectory(longPathFolder);
+            file.SaveAs(longPath);
             reporte.FechaReporte = DateTime.Now;
+            reporte.FilePath = filePath;
             reporteBusiness.Insert(reporte);
-            return RedirectToAction("Home", "Index");
+            return RedirectToAction("Index", "Home");
         }
     }
 }
