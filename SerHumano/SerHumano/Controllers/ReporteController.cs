@@ -28,7 +28,10 @@ namespace SerHumano.Controllers
         {
             return View();
         }
-
+        public ActionResult Details(int id)
+        {
+            return View();
+        }
         [HttpPost]
         public ActionResult SubmitReport(Models.Reporte reporte, HttpPostedFileBase file)
         {

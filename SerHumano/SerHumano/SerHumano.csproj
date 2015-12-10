@@ -198,6 +198,7 @@
     <Content Include="Content\Details.css" />
     <Content Include="Content\Home.css" />
     <Content Include="Content\Images\fondoazul-02.png" />
+    <Content Include="Content\Images\Green.png" />
     <Content Include="Content\List.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -257,6 +258,7 @@
     <Content Include="Views\Shared\Home.cshtml" />
     <Content Include="Views\Reporte\SubmitReport.cshtml" />
     <Content Include="Views\Reporte\ReportsList.cshtml" />
+    <Content Include="Views\Reporte\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

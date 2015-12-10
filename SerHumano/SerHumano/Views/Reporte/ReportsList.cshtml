@@ -1,11 +1,37 @@
 ﻿@model ICollection<SerHumano.Models.ReportListViewModel>
-@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+
 <ul class="list-group">
     @foreach (var Report in Model)
     {
-        <li class="list-group-item"><a href="">@Report.Header</a></li>
+        <div id="Reporte">
+            <li class="list-group-item"><a href="">@Report.Header</a></li>
+
+        </div>
     }
 </ul>
 
+<div id="Inner-News">
+
+    <div class="vertical_container">
+        <h1>Reportes</h1>
+        <div class="Display_Reportes">
+            <ul class="Reportes">
+                @foreach (var report in Model)
+                {
+                    <li>
+                        <a href="#">
+                            <img src="">
+                            <h4>@report.Header</h4>
+                            @Html.ActionLink("Details","Details",new  {id = report.Id})
+                            
+
+                        </a>
+                    </li>
+                }
+            </ul>
+
+        </div>
+
+
+    </div>
+</div>
