@@ -1,37 +1,21 @@
 ﻿@model ICollection<SerHumano.Models.ReportListViewModel>
 
-<ul class="list-group">
-    @foreach (var Report in Model)
-    {
-        <div id="Reporte">
-            <li class="list-group-item"><a href="">@Report.Header</a></li>
 
-        </div>
-    }
-</ul>
+@Styles.Render("~/Content/Home.css")
 
-<div id="Inner-News">
+<div align="center" id="Main-Form">
+    <table  style="border: 1px solid black;border-collapse: collapse;">
+        <tr>
+            <td>Id</td>
+            <td>Título</td>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(item.Id.ToString(), "ReportDetails", "Reporte", new { ReportId=item.Id}, null)</td>
+                <td>@item.Header</td>
+            </tr>
+        }
 
-    <div class="vertical_container">
-        <h1>Reportes</h1>
-        <div class="Display_Reportes">
-            <ul class="Reportes">
-                @foreach (var report in Model)
-                {
-                    <li>
-                        <a href="#">
-                            <img src="">
-                            <h4>@report.Header</h4>
-                            @Html.ActionLink("Details","Details",new  {id = report.Id})
-                            
-
-                        </a>
-                    </li>
-                }
-            </ul>
-
-        </div>
-
-
-    </div>
+    </table>
 </div>

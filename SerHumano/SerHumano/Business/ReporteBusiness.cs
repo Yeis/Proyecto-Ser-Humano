@@ -27,6 +27,12 @@ namespace SerHumano.Business
             return ViewModels.ToList();
         }
 
+        public Reporte GetReportById(int Id)
+        {
+            var Report = context.Reportes.Where(r => r.ID == Id).SingleOrDefault();
+            return Report;
+        }
+
         ReportListViewModel AsViewModel(Reporte Reporte)
         {
             return new ReportListViewModel() { Header = Reporte.Titulo, Id = Reporte.ID };

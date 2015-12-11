@@ -28,10 +28,13 @@ namespace SerHumano.Controllers
         {
             return View();
         }
-        public ActionResult Details(int id)
+
+        public ActionResult ReportDetails(int ReportId)
         {
-            return View();
+            var Report = reporteBusiness.GetReportById(ReportId);
+            return View(Report);
         }
+
         [HttpPost]
         public ActionResult SubmitReport(Models.Reporte reporte, HttpPostedFileBase file)
         {
@@ -51,7 +54,7 @@ namespace SerHumano.Controllers
             reporte.FechaReporte = DateTime.Now;
             reporte.FilePath = filePath;
             reporteBusiness.Insert(reporte);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("SubmitReport", "Reporte");
         }
     }
 }
