@@ -1,7 +1,7 @@
 ﻿html
  {
     background-color:  #e6ebb1;
-     background: url(Images/Green.png) repeat center center   fixed; 
+     background: url(Images/fondoazul-02.png) repeat center center   fixed; 
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -39,10 +39,18 @@ label,h2,p ,input
 {
     width: 80%;
     margin-left: 10%;
-    height: 160%;
+    height: 80%;
     column-count: 4;
     column-gap: 40px;
+
         
+}
+h4
+{
+    font-size:26px;
+    font-family: sans-serif;
+    color:white;
+    margin-bottom:10px;
 }
 ul.Reportes li
 {
