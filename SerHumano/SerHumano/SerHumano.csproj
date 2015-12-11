@@ -205,6 +205,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\Images\arbolesenpng.png" />
     <Content Include="Content\Images\fondo-arboles-01.png" />
+    <Content Include="Images\upfeathers.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -261,7 +262,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -296,7 +296,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>57924</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

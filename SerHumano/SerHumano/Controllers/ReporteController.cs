@@ -54,7 +54,7 @@ namespace SerHumano.Controllers
             reporte.FechaReporte = DateTime.Now;
             reporte.FilePath = filePath;
             reporteBusiness.Insert(reporte);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("SubmitReport", "Reporte");
         }
     }
 }

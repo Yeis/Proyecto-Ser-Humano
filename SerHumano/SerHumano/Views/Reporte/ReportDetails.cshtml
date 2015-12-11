@@ -9,12 +9,23 @@
             <label class="col-lg-4">Ubicación:</label>
             @Model.Ubicacion
         </div>
+    <br />
         <div class="col-lg-12">
             <label id="Property" class="col-lg-4">Causa del Reporte:</label>
             @Model.CausaReporte
         </div>
+    <br />
+        <div class="col-lg-12">
+            <label id="Property" class="col-lg-4">Fecha en la que se hizo el reporte:</label>
+            @Model.FechaReporte.ToShortDateString()
+        </div>
+    <br />
+    @if (Model.FilePath != null) { 
         <div class="col-lg-12">
             <label id="Property" class="col-lg-4">Imagen de Area Afectada:</label>
+            <br />
+            <img src="/@Model.FilePath"/>
         </div>
+    }
 </div>
 

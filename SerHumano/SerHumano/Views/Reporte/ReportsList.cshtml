@@ -3,17 +3,19 @@
 
 @Styles.Render("~/Content/Home.css")
 
-<table>
-    <tr>
-        <td>Id</td>
-        <td>Título</td>
-    </tr>
-    @foreach (var item in Model)
-    {
+<div align="center" id="Main-Form">
+    <table  style="border: 1px solid black;border-collapse: collapse;">
         <tr>
-            <td>item.Id</td>
-            <td>item.Title</td>
+            <td>Id</td>
+            <td>Título</td>
         </tr>
-    }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(item.Id.ToString(), "ReportDetails", "Reporte", new { ReportId=item.Id}, null)</td>
+                <td>@item.Header</td>
+            </tr>
+        }
 
-</table>
+    </table>
+</div>
