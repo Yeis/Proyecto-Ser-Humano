@@ -32,3 +32,6 @@ label,h2,p ,input,h4
 
     display:inline;
 }
+table, th, td {
+    border: 1px solid black;
+}
