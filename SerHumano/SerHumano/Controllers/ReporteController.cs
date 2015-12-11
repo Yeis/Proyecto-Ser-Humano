@@ -29,6 +29,12 @@ namespace SerHumano.Controllers
             return View();
         }
 
+        public ActionResult ReportDetails(int ReportId)
+        {
+            var Report = reporteBusiness.GetReportById(ReportId);
+            return View(Report);
+        }
+
         [HttpPost]
         public ActionResult SubmitReport(Models.Reporte reporte, HttpPostedFileBase file)
         {

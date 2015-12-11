@@ -257,6 +257,7 @@
     <Content Include="Views\Shared\Home.cshtml" />
     <Content Include="Views\Reporte\SubmitReport.cshtml" />
     <Content Include="Views\Reporte\ReportsList.cshtml" />
+    <Content Include="Views\Reporte\ReportDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

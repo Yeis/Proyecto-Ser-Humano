@@ -1,0 +1,20 @@
+﻿@model SerHumano.Models.Reporte
+
+@Styles.Render("~/Content/Home.css")
+
+
+<div align="center" id="Main-Form">
+    <h2>@Model.Titulo</h2>
+        <div id="Property" class="col-lg-12">
+            <label class="col-lg-4">Ubicación:</label>
+            @Model.Ubicacion
+        </div>
+        <div class="col-lg-12">
+            <label id="Property" class="col-lg-4">Causa del Reporte:</label>
+            @Model.CausaReporte
+        </div>
+        <div class="col-lg-12">
+            <label id="Property" class="col-lg-4">Imagen de Area Afectada:</label>
+        </div>
+</div>
+
