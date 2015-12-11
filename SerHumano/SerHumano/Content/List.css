@@ -1,0 +1,62 @@
+﻿html
+ {
+    background-color:  #e6ebb1;
+     background: url(Images/fondoazul-02.png) repeat center center   fixed; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+label,h2,p ,input
+{
+    font-family: sans-serif;
+    color:white;
+    margin-bottom:10px;
+
+}
+#Inner-Section
+{
+    background-color: #212121;
+    opacity: 65%;
+    color: #212121;
+    width: 100%;
+    height: 160%;
+    position: relative;
+}
+.vertical_container {
+  display: inline-block;
+  width: 99%;
+  vertical-align: middle; }
+#Inner-News h1 {
+    text-align: center;
+    color: white;
+    font-family: Century Gothic;
+    font-weight: normal;
+    font-size: 70px;
+    margin-bottom: 90px;
+    text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray; }
+.Display_Reportes
+{
+    width: 80%;
+    margin-left: 10%;
+    height: 80%;
+    column-count: 4;
+    column-gap: 40px;
+
+        
+}
+h4
+{
+    font-size:26px;
+    font-family: sans-serif;
+    color:white;
+    margin-bottom:10px;
+}
+ul.Reportes li
+{
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}

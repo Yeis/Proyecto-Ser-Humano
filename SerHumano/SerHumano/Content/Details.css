@@ -1,0 +1,16 @@
+﻿html
+ {
+    background-color:  #e6ebb1;
+     background: url(Images/fondoazul-02.png) repeat center center   fixed; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+label,h2,p ,input
+{
+    font-family: sans-serif;
+    color:white;
+    margin-bottom:10px;
+
+}
